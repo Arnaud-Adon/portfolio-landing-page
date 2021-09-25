@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "name": "versus-fighting-improve-app",
+      "description": [
+        "Marketplace Website created with M.E.R.N Stack ( MongoDB, Express, React, NodeJs ) with payment system with Stripe",
+        "To understand and assimilate the M.E.R.N stack, use react pattern (custom hook, context, HOC, compound component, etc ...)"
+      ],
+      "images": [
+        "ressources/projects/Capture d’écran 2021-02-19 à 02.08.11.png",
+        "ressources/projects/Capture d’écran 2021-02-19 à 02.08.11.png",
+        "ressources/projects/Capture d’écran 2021-02-19 à 02.08.11.png"
+      ],
+      "fonctionnalities": [
+        "Signup / Signin user",
+        "Select items",
+        "Cart with dynamic price",
+        "Adress and delivery type information",
+        "Redirection on the stripe platform"
+      ],
+      "technical_stack": {
+        "client": [
+          "React v17.0.1",
+          "Redux: v4.0.0",
+          "Bootstrap v4.5.3",
+          "Payment plateform - Stripe / React Stripe v1"
+        ],
+        "server": []
+      }
+    }
+  ]
+}
