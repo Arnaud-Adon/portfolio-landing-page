@@ -76,18 +76,21 @@ const mediaBtn = document.querySelectorAll(".media");
 const circleBtn = document.querySelector(".circle-btn");
 
 const timeleneIntroduction = gsap.timeline({ paused: true });
-timeleneIntroduction
-  .to(navbar, { left: "0px", ease: Power3.easeOut, duration: 0.6 })
-  .from(title, { y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4 })
-  .staggerFrom(btnAcc, 1, { opacity: 0 }, 0.2, "-=0.30")
-  .staggerFrom(mediaBtn, 1, { opacity: 0 }, 0.2, "-=0.75")
-  .from(
-    circleBtn,
-    { y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4 },
-    "-=1"
-  );
 
-window.addEventListener("load", () => timeleneIntroduction.play());
+if (timeleneIntroduction) {
+  timeleneIntroduction
+    .to(navbar, { left: "0px", ease: Power3.easeOut, duration: 0.6 })
+    .from(title, { y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4 })
+    .staggerFrom(btnAcc, 1, { opacity: 0 }, 0.2, "-=0.30")
+    .staggerFrom(mediaBtn, 1, { opacity: 0 }, 0.2, "-=0.75")
+    .from(
+      circleBtn,
+      { y: -50, opacity: 0, ease: Power3.easeOut, duration: 0.4 },
+      "-=1"
+    );
+
+  window.addEventListener("load", () => timeleneIntroduction.play());
+}
 
 // ANIMATION SCROLL MAGIC GSAP - PRESENTATION
 

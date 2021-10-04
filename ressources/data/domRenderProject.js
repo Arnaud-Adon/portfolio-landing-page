@@ -103,6 +103,7 @@ export const renderProjects = (projects, container, elements) => {
 
     if (projectNode) {
       projectNode.addEventListener("click", () => {
+        container.scroll(0, 0);
         name && renderTitle(name, elements.name);
         description && renderDescription(description, elements.description);
         images && renderImages(images, elements.images, type);

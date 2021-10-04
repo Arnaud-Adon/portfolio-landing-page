@@ -141,4 +141,24 @@ export const projects = [
       app: "",
     },
   },
+  {
+    id: "project5",
+    name: "snake-javascript-project",
+    type: "mobile-app",
+    description: ["Jeu du serpent construit avec du javascript vanilla"],
+    images: ["ressources/projects/Capture d’écran 2021-09-27 à 04.06.26.png"],
+    functionalities: [
+      "Creation du terrain de jeu avec un canvas",
+      "Gestion du serpent avec l'écoute de certaines touches",
+      "Gestion des colisions du sertent avec les extremités et son corps",
+    ],
+    technicalStack: {
+      client: [],
+      server: [],
+    },
+    links: {
+      github: "https://github.com/Arnaud-Adon/Snake-javascript-project",
+      app: "",
+    },
+  },
 ];
